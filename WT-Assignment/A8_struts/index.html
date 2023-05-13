@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation Form</title>
+    <script>
+    function Validate()
+    {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("password");
+        var emailId = document.getElementById("emailid");
+
+        if(username.value == "" || password.value == "")
+        {
+            alert("No Blank Values are allowed");
+            return false;
+        }
+        else
+        {
+           true;
+        }
+        if(username.value == "" || password.value == "" || emailid.value == "")
+        {
+            alert("No Blank Values are allowed");
+            return false;
+        }
+        else
+        {
+           true;
+        }
+    }
+
+    </script>
+    </head>
+    <body>
+        <form onsubmit="return Validate()" action="welcome.html">
+        Username <input id="uname" type="text" name="uname" placeholder="Enter your name"></br><br/>
+        password <input id="password" name="password" type="password" placeholder="Enter your password"><br/><br/>
+        email Id <input id="unname" name="unname" type="text" placeholder="Enter your email Id"><br/><br/>
+        <button type="submit">Click Me!</button>
+        </body>
+    </form>
+</html>
